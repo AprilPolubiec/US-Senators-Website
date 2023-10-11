@@ -116,6 +116,12 @@ function filter(filterOptionsObj) {
       item.state = senator.state;
       item.rank = senator.senator_rank;
       item.gender = senator.person.gender_label;
+      item.office = senator.extra.office
+      item.dob = senator.person.birthday
+      item.startdate = senator.startdate
+      item.twitter = senator.person.twitterid
+      item.youtube = senator.person.youtubeid
+      item.website = senator.website
       output.push(item);
     }
   });
